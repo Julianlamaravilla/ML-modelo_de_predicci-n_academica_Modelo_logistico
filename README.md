@@ -127,13 +127,15 @@ El notebook actual se centra en el flujo base y en `accuracy`.
 
 ## Dashboard (ipywidgets)
 
-El notebook incluye una sección “PLUS: Dashboard de predicción” para ejecutar predicciones con controles interactivos:
+El notebook incluye una sección “PLUS: Dashboard de predicción” para ejecutar predicciones con controles interactivos y un pequeño panel de interpretación:
 
 - Sliders para `horas_conexion`, `recursos_vistos`, `nota`
 - Dropdown para `participacion_foro`
 - Botón para calcular:
   - clase predicha (`model.predict`)
   - probabilidad (`model.predict_proba`)
+  - semáforo de riesgo de abandono (bajo, medio, alto) según la probabilidad
+  - recomendaciones de intervención personalizadas (aumentar horas, ver más recursos, participar en foros, reforzar contenidos)
 
 ### Dependencia
 
